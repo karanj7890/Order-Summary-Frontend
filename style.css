@@ -1,0 +1,112 @@
+:root{
+    --Pale--blue: hsl(225, 100%, 94%);
+    --Bright--blue: hsl(245, 75%, 52%);
+    --Very--pale--blue: hsl(225, 100%, 98%);
+    --Desaturated--blue: hsl(224, 23%, 55%);
+    --Dark--blue: hsl(223, 47%, 23%);
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-image: url(./images/pattern-background-desktop.svg);
+    background-repeat: no-repeat;
+    background-size: auto;
+    background-color: var(--Pale--blue);
+    font-family: 'Red Hat Display', sans-serif;
+    font-size: 16px;
+}
+
+.group{
+    width: 450px;
+    background-color: #fff;
+    color: var(--Desaturated--blue);
+    border-radius: 20px;
+    overflow: hidden;
+    margin: 50px auto;
+}
+.title{
+    margin-top: 19px;
+    color: var(--Dark--blue);
+    font-weight: 900;
+    font-size: 30px;
+}
+.hero{
+    width: 100%;
+}
+.container{
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    font-size: 18px;
+}
+.container_plan >*{
+    margin: 15px 0;
+}
+.plain{
+    margin-top: 17px;
+    line-height: 25px;
+}
+.container_plan{
+    font-size: 17px;
+    margin: 35px;
+    padding: 24 24 0 24px;
+    background-color: hsl(225, 100%, 94%, 0.4);
+    border-radius: 12px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.container_plan a{
+    margin-right: 10px;
+    padding-top: 9px;
+    color: var(--Bright--blue);
+    font-size: 14px;
+    font-weight: 700;
+}
+.text-plan{
+    color: var(--Dark--blue);
+}
+.description{
+    line-height: 25px;
+    margin-right: 85px;
+}
+.music{
+    margin-left: 5px;
+}
+button{
+    width: 100%;
+    border: none;
+    font-weight: 700;
+    font-size: 0.9rem;
+    border-radius: 12px;
+    cursor: pointer;
+}
+.proceed{
+    background-color: var(--Bright--blue);
+    padding: 1rem 0;
+    color: #fff;
+    box-shadow: 0 20px 30px -8px rgb(197 189 245);
+}
+.proceed:hover{
+    opacity: 0.8;
+}
+.cancel{
+    background-color: #fff;
+    color: var(--Desaturated--blue);
+    margin-top: 24px;
+    margin-bottom: 24px;
+}
+.cancel:hover{
+    color: black;
+}
+
+@media screen and (max-width:700px) {
+    body{
+        background-image: url(/images/pattern-background-mobile.svg);
+    }    
+}
